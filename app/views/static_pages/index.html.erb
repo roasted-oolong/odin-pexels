@@ -1,0 +1,7 @@
+<h1>Pexel API - Photo Gallery</h1>
+
+<%= form_with(url: "/", method: :get, data: { turbo: false} ) do %>
+  <%= label_tag(:query, "Pexel Collection ID:") %>
+  <%= text_field_tag(:query) %>
+  <%= submit_tag("Search") %>
+<% end %>
